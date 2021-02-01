@@ -1,0 +1,43 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+class Student{
+    public: 
+     string studentName;
+     int rollNumber;
+     float studentFees;
+
+     void displayStudentDetails(){
+         cout<<"The student name ,rollNumber and studentFees is"<<studentName<<rollNumber<<studentFees<<endl;
+     }
+
+};
+
+class Teacher{
+    public:
+    string teacherName;
+    int teacherId;
+    float teacherSalary;
+
+    void displayTeacherDetails(){
+        cout<<"The teacher name,Id and Teacher salary is "<<teacherName<<teacherId<<teacherSalary<<endl;
+    }
+};
+
+int main(){
+    Student student1;
+    student1.studentName="Vikash Dubey";
+    student1.studentFees=70000;
+    student1.rollNumber=77;
+
+    student1.displayStudentDetails();
+ 
+ Student x;
+    x.studentName="Mukseh Dubey";
+    x.studentFees=95000;
+    x.rollNumber=55;
+
+    x.displayStudentDetails();
+
+}

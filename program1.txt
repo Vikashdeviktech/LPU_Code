@@ -1,0 +1,22 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main(){
+    string myName;
+    int rollNumber;
+    float fees;
+
+    cout<<"Enter the name , rollNumber and fees";
+
+    cin>>myName>>rollNumber>>fees;
+
+    cout<<"The student name is"<<myName<<endl;
+    cout<<"The roll number is "<<rollNumber<<endl;
+    cout<<"The fees for the student is"<<fees;
+
+    
+
+    return 0;
+
+}
