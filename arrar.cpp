@@ -1,25 +1,30 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
+class student
+{
 
-    int n;
-    cout<<"enter the size of array"<<endl;
-    cin>>n;
+public:
+    int rollNonStatic;
+    static int rollStatic;
+};
 
-    int arr[n];
-    
-    cout<<" enter the elements in th array";
+int student::rollStatic; //static member func declare outside the class.
 
-    for(int i=0;i<n;i++ ){
-        cin>>arr[i];
-    }
-    int sum=0;
+int main()
 
-    for(int i=0;i<n;i++){
-        sum=sum+arr[i];
-    }
-    cout<<" the sum of the elements in th array is"<<sum;
+{
 
+    student objone;
+    objone.rollNonStatic = 77;
 
+    cout << ++objone.rollNonStatic << " "<< ++objone.rollStatic << endl;
+
+     student objtwo;
+
+    objtwo.rollNonStatic = 55;
+
+    cout << ++objtwo.rollNonStatic <<" "<< ++objtwo.rollStatic; //static member print the updated value
+
+    return 0;
 }
