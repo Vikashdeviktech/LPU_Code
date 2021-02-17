@@ -22,7 +22,6 @@ void displayInfo(FriendA obj){
 }
 
 
-
 int main(){
     FriendA obj;
     displayInfo(obj);
