@@ -1,25 +1,21 @@
-#include<iostream>
-using namespace std;
+void movezero(int arr[],int 5){
+int count=0;
 
-void pushZeroToEnd(int arr[],int n){
-    int count=0;
-    for(int i=0;i<n;i++)
-      if(arr[i]!=0)
-        arr[count++]=arr[i];
+for(int i=0;i<5;i++)
+if(arr[i]!=0)
+arr[count++]=arr[i];
 
-    while(count<n)
-       arr[count++]=0;
+while(count<5)
+arr[count++]=0;
 }
-
+void printElement(int arr[],int 5){
+for(int i=0;i<5;i++)
+cout<<arr[i]<<" ";
+}
 int main(){
-    int n;
-    cin>>n;
-    int arr[n];
-    for(int i=0;i<n;i++)
-       cin>>arr[i];
+int arr[5]={0,2,0,0,1};
 
-    pushZeroToEnd(arr,n);
+movezero(arr,5);
+printElement(arr,5);
 
-    for(int i=0;i<n;i++)
-      cout<<arr[i]<<" ";
 }
