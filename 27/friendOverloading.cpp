@@ -16,10 +16,10 @@ class Dist{
         this->y=y1;
     }
 
-    friend Dist operator + (Dist&,Dist&);
+    friend Dist operator + (Dist&,Dist&);     // 
 };
 
-Dist operator + (Dist &d1,Dist &d2){
+Dist operator + (Dist &d1,Dist &d2){     // call by reference 
     Dist d3;
     d3.x=d1.x+d2.x;
     d3.y=d1.y+d2.y;
