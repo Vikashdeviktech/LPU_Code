@@ -1,8 +1,14 @@
 #include<iostream>
 using namespace std;
 
-class Base{};
-class Derived:public Base{};
+class Base{
+    private:
+    int a,b;
+
+};
+class Derived:public Base{
+    // a and b are in accessable
+};
 
 int main(){
     Derived d;
